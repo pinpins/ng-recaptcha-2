@@ -42,7 +42,8 @@
           "builder": "@angular-devkit/build-angular:application",
           "options": {
             "outputPath": {
-              "base": "dist/demo/ng-recaptcha"
+              "base": "dist/demo/ng-recaptcha",
+              "browser": ""
             },
             "index": "projects/demo/src/index.html",
             "polyfills": ["projects/demo/src/polyfills.ts"],
