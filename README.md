@@ -43,11 +43,11 @@ A simple, configurable, easy-to-start component for handling reCAPTCHA v2 and v3
 The easiest way is to install through [yarn](https://yarnpkg.com/package/ng-recaptcha) or [npm](https://www.npmjs.com/package/ng-recaptcha):
 
 ```sh
-yarn add ng-recaptcha
-npm i ng-recaptcha --save
+yarn add ng-recaptcha-2
+npm i ng-recaptcha-2 --save
 ```
 
-## <a name="example-basic"></a>Basic Usage [(see in action)](https://dethariel.github.io/ng-recaptcha/)
+## <a name="example-basic"></a>Basic Usage [(see in action)](https://dethariel.github.io/ng-recaptcha-2/)
 
 The below applies to reCAPTCHA v2, for basic usage with reCAPTCHA v3 scroll down to [here](#example-basic-v3).
 
@@ -55,9 +55,9 @@ To start with, you need to import the `RecaptchaModule` (more on that [later](#m
 
 ```typescript
 // app.module.ts
-import { RecaptchaModule } from "ng-recaptcha";
+import { RecaptchaModule } from "ng-recaptcha-2";
 // if you need forms support:
-// import { RecaptchaModule, RecaptchaFormsModule } from 'ng-recaptcha';
+// import { RecaptchaModule, RecaptchaFormsModule } from 'ng-recaptcha-2';
 import { BrowserModule } from "@angular/platform-browser";
 import { MyApp } from "./app.component.ts";
 
@@ -104,7 +104,7 @@ platformBrowserDynamic().bootstrapModule(MyAppModule);
 
 ```ts
 import { BrowserModule } from "@angular/platform-browser";
-import { RECAPTCHA_V3_SITE_KEY, RecaptchaV3Module } from "ng-recaptcha";
+import { RECAPTCHA_V3_SITE_KEY, RecaptchaV3Module } from "ng-recaptcha-2";
 
 import { MyApp } from "./app.component.ts";
 
@@ -120,7 +120,7 @@ export class MyAppModule {}
 In order to execute a reCAPTCHA v3 action, import the `ReCaptchaV3Service` into your desired component:
 
 ```ts
-import { ReCaptchaV3Service } from 'ng-recaptcha';
+import { ReCaptchaV3Service } from 'ng-recaptcha-2';
 
 @Component({
   selector: 'recaptcha-demo',
@@ -155,7 +155,7 @@ You can also play with [this Stackblitz demo](https://stackblitz.com/edit/ng-rec
 There are two modules available for you:
 
 ```typescript
-import { RecaptchaModule, RecaptchaFormsModule } from "ng-recaptcha";
+import { RecaptchaModule, RecaptchaFormsModule } from "ng-recaptcha-2";
 ```
 
 If you want your `<re-captcha>` element to work correctly with `[(ngModel)]` directive,
@@ -202,6 +202,10 @@ Besides specifying these options on the component itself, you can provide a glob
 
 ## <a name="angular-versions"></a>Angular version compatibility
 
+| `ng-recaptcha-2` version                                                         | Supported Angular versions                           |
+| -------------------------------------------------------------------------------- | ---------------------------------------------------- |
+| `14.x.x`                                                                         | `18.x.x`                                             |
+
 | `ng-recaptcha` version                                                           | Supported Angular versions                           |
 | -------------------------------------------------------------------------------- | ---------------------------------------------------- |
 | `13.x.x`                                                                         | `17.x.x`                                             |
@@ -226,7 +230,7 @@ Besides specifying these options on the component itself, you can provide a glob
 Some properties are global - including `siteKey`, `size`, and others. You can provide them at the module-level using the `RECAPTCHA_SETTINGS` provider:
 
 ```typescript
-import { RECAPTCHA_SETTINGS, RecaptchaSettings } from "ng-recaptcha";
+import { RECAPTCHA_SETTINGS, RecaptchaSettings } from "ng-recaptcha-2";
 
 @NgModule({
   providers: [
@@ -252,7 +256,7 @@ A good way to synchronize reCAPTCHA language with the rest of your application i
 
 ```typescript
 import { LOCALE_ID } from "@angular/core";
-import { RECAPTCHA_LOADER_OPTIONS } from "ng-recaptcha";
+import { RECAPTCHA_LOADER_OPTIONS } from "ng-recaptcha-2";
 
 @NgModule({
   providers: [
@@ -275,7 +279,7 @@ export class MyModule {}
 Alternatively, a specific language can be provided like so:
 
 ```typescript
-import { RECAPTCHA_LOADER_OPTIONS } from "ng-recaptcha";
+import { RECAPTCHA_LOADER_OPTIONS } from "ng-recaptcha-2";
 
 @NgModule({
   providers: [
@@ -349,7 +353,7 @@ The below code snippet is an example of how such a provider can be implemented.
 ```
 
 ```typescript
-import { RecaptchaLoaderService } from "ng-recaptcha";
+import { RecaptchaLoaderService } from "ng-recaptcha-2";
 
 @Injectable()
 export class PreloadedRecaptchaAPIService {
@@ -375,7 +379,7 @@ export class MyModule {}
 ### <a name="example-forms"></a>Usage with `required` in forms [(see in action)](https://dethariel.github.io/ng-recaptcha/forms)
 
 It's very easy to put `<re-captcha>` in an Angular form and have it `require`d - just
-add the `required` attribute to the `<re-captcha>` element. Do not forget to import `RecaptchaFormsModule` from `'ng-recaptcha'`!
+add the `required` attribute to the `<re-captcha>` element. Do not forget to import `RecaptchaFormsModule` from `'ng-recaptcha-2'`!
 
 ```typescript
 @Component({
@@ -466,7 +470,7 @@ Making reCAPTCHA responsive is sometimes necessary, especially when working with
 
 ### <a name="example-systemjs"></a>SystemJS configuration
 
-To configure the package to work with SystemJS, you would configure it approximately like that (assuming you've installed `ng-recaptcha` using `npm`):
+To configure the package to work with SystemJS, you would configure it approximately like that (assuming you've installed `ng-recaptcha-2` using `npm`):
 
 ```javascript
 // SystemJS config file
@@ -476,10 +480,10 @@ To configure the package to work with SystemJS, you would configure it approxima
       "npm:": "/node_modules/",
     },
     map: {
-      "ng-recaptcha": "npm:ng-recaptcha",
+      "ng-recaptcha-2": "npm:ng-recaptcha-2",
     },
     packages: {
-      "ng-recaptcha": { main: "./index.js" },
+      "ng-recaptcha-2": { main: "./index.js" },
     },
   });
 })();
@@ -490,7 +494,7 @@ To configure the package to work with SystemJS, you would configure it approxima
 Since `"google.com"` domain might be unavailable in some countries, reCAPTCHA core team has a solution for that - using `"recaptcha.net"` domain. You can configure the component to use that by using the `onBeforeLoad` hook of `RECAPTCHA_LOADER_OPTIONS`, for example:
 
 ```javascript
-import { RECAPTCHA_LOADER_OPTIONS } from "ng-recaptcha";
+import { RECAPTCHA_LOADER_OPTIONS } from "ng-recaptcha-2";
 
 @NgModule({
   providers: [
@@ -514,7 +518,7 @@ export class MyModule {}
 Per [reCAPTCHA FAQ on CSP](https://developers.google.com/recaptcha/docs/faq#im-using-content-security-policy-csp-on-my-website-how-can-i-configure-it-to-work-with-recaptcha), the recommended approach for that is to supply nonce to the script tag. This is possible by providing the nonce as part of the `onBeforeLoad` hook of `RECAPTCHA_LOADER_OPTIONS`, for example
 
 ```javascript
-import { RECAPTCHA_LOADER_OPTIONS } from "ng-recaptcha";
+import { RECAPTCHA_LOADER_OPTIONS } from "ng-recaptcha-2";
 
 @NgModule({
   providers: [
@@ -552,7 +556,7 @@ where `action` is the name of the action that has been executed, and `token` is 
 Here's how you would potentially set this up:
 
 ```ts
-import { OnExecuteData, ReCaptchaV3Service } from "ng-recaptcha";
+import { OnExecuteData, ReCaptchaV3Service } from "ng-recaptcha-2";
 
 @Component({
   selector: "my-component",
@@ -607,7 +611,7 @@ export class ConfigService {
 
 // app.module.ts
 import { APP_INITIALIZER, NgModule } from "@angular/core";
-import { RECAPTCHA_SETTINGS, RecaptchaSettings, RECAPTCHA_V3_SITE_KEY } from "ng-recaptcha";
+import { RECAPTCHA_SETTINGS, RecaptchaSettings, RECAPTCHA_V3_SITE_KEY } from "ng-recaptcha-2";
 
 import { ConfigService } from "./config.service";
 
@@ -644,6 +648,6 @@ export class AppModule {}
 
 ### <a name="hide-recaptcha-badge"></a>Hiding reCAPTCHA badge
 
-To start with, this is not strictly under `ng-recaptcha` library control.
+To start with, this is not strictly under `ng-recaptcha-2` library control.
 However, there is a way of doing so (albeit subject to certain conditions).
 Please refer to the [FAQ section of reCAPTCHA documentation](https://developers.google.com/recaptcha/docs/faq#id-like-to-hide-the-recaptcha-badge.-what-is-allowed) to get an idea of what you're required to do.
