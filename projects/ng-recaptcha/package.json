@@ -1,5 +1,5 @@
 {
-  "name": "ng-recaptcha-2",
+  "name": "ng-recaptcha-19",
   "description": "Angular component for Google reCAPTCHA for Angular v18 and onwards",
   "version": "15.0.0",
   "author": "Pinpins <zergpools@gmail.com>",
@@ -14,7 +14,7 @@
     "recaptcha",
     "angular-recaptcha",
     "ng-recaptcha",
-    "angular-18"
+    "angular-19"
   ],
   "peerDependencies": {
     "@angular/core": "^19.0.0"
