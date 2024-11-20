@@ -1,14 +1,14 @@
 {
   "name": "ng-recaptcha-2",
   "description": "Angular component for Google reCAPTCHA for Angular v18 and onwards",
-  "version": "14.0.0",
-  "author": "Ruslan Arkhipau <dethariel@gmail.com>",
+  "version": "15.0.0",
+  "author": "Pinpins <zergpools@gmail.com>",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/LakhveerChahal/ng-recaptcha-2"
+    "url": "git+https://github.com/pinpins/ng-recaptcha-2"
   },
-  "homepage": "https://github.com/LakhveerChahal/ng-recaptcha-2#readme",
+  "homepage": "https://github.com/pinpins/ng-recaptcha-2#readme",
   "keywords": [
     "angular",
     "recaptcha",
@@ -17,7 +17,7 @@
     "angular-18"
   ],
   "peerDependencies": {
-    "@angular/core": "^18.0.1"
+    "@angular/core": "^19.0.0"
   },
   "dependencies": {
     "@types/grecaptcha": "^3.0.7",
