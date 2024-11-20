@@ -1,6 +1,6 @@
 {
   "name": "ng-recaptcha-base",
-  "private": true,
+  "private": false,
   "version": "14.0.0",
   "scripts": {
     "demo:file-gen": "ts-node --project ./tsconfig.node.json ./projects/demo/bin/file-gen.ts",
@@ -12,7 +12,7 @@
     "clean": "rimraf dist",
     "changelog": "conventional-changelog --preset angular --infile CHANGELOG.md --same-file",
     "github-release": "conventional-github-releaser --preset angular",
-    "lib:build": "ng build ng-recaptcha --configuration production",
+    "lib:build": "ng build ng-recaptcha-2 --configuration production",
     "version:lib": "cd projects/ng-recaptcha && npm version $NGR_VERSION --no-git-tag-version && git add package.json",
     "preversion": "yarn version:lib && yarn lib:build",
     "version": "yarn changelog && git add CHANGELOG.md && cp CHANGELOG.md dist/ng-recaptcha/CHANGELOG.md",
