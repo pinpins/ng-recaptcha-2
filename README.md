@@ -1,6 +1,6 @@
 # Angular component for Google reCAPTCHA
 
-## ng-recaptcha-2 [![npm version](https://badge.fury.io/js/ng-recaptcha.svg)](https://www.npmjs.com/package/ng-recaptcha-2)
+## ng-recaptcha-2 [![npm version](https://badge.fury.io/js/ng-recaptcha.svg)](https://www.npmjs.com/package/ng-recaptcha-19)
 
 Parent project [(ng-recaptcha)](https://dethariel.github.io/ng-recaptcha/)
 
