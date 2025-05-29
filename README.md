@@ -1,13 +1,13 @@
 # Angular component for Google reCAPTCHA
 
-## ng-recaptcha-2 [![npm version](https://badge.fury.io/js/ng-recaptcha.svg)](https://www.npmjs.com/package/ng-recaptcha-19)
+## ng-recaptcha-19 [![npm version](https://badge.fury.io/js/ng-recaptcha.svg)](https://www.npmjs.com/package/ng-recaptcha-19)
 
 Parent project [(ng-recaptcha)](https://dethariel.github.io/ng-recaptcha/)
 
-[![MIT licensed](https://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/dethariel/ng-recaptcha/master/LICENSE)
-[![Build Status](https://app.travis-ci.com/DethAriel/ng-recaptcha.svg?branch=master)](https://app.travis-ci.com/DethAriel/ng-recaptcha)
-[![Coverage Status](https://coveralls.io/repos/github/DethAriel/ng-recaptcha/badge.svg?branch=master)](https://coveralls.io/github/DethAriel/ng-recaptcha?branch=master)
-[![NPM downloads](https://img.shields.io/npm/dm/ng-recaptcha)](https://www.npmjs.com/package/ng-recaptcha)
+[![MIT licensed](https://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/pinpins/ng-recaptcha/master/LICENSE)
+[![Build Status](https://app.travis-ci.com/DethAriel/ng-recaptcha.svg?branch=master)](https://app.travis-ci.com/pinpins/ng-recaptcha-19)
+[![Coverage Status](https://coveralls.io/repos/github/DethAriel/ng-recaptcha/badge.svg?branch=master)](https://coveralls.io/github/pinpins/ng-recaptcha-19?branch=master)
+[![NPM downloads](https://img.shields.io/npm/dm/ng-recaptcha)](https://www.npmjs.com/package/ng-recaptcha-19)
 
 A simple, configurable, easy-to-start component for handling reCAPTCHA v2 and v3.
 
