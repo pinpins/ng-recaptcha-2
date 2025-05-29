@@ -1,7 +1,7 @@
 {
   "name": "ng-recaptcha-19",
   "description": "Angular component for Google reCAPTCHA for Angular v18 and onwards",
-  "version": "20.0.3",
+  "version": "20.0.4",
   "author": "Pinpins <zergpools@gmail.com>",
   "license": "MIT",
   "repository": {

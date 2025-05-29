@@ -18,7 +18,8 @@
     "version": "yarn changelog && git add CHANGELOG.md && cp CHANGELOG.md dist/ng-recaptcha/CHANGELOG.md",
     "lint": "eslint projects --ext .js,.ts,.html",
     "prepare": "husky install",
-    "e2e": "ng e2e"
+    "e2e": "ng e2e",
+    "lib:publish": "cd dist/ng-recaptcha && npm publish"
   },
   "lint-staged": {
     "**/*": "prettier --write --ignore-unknown"
