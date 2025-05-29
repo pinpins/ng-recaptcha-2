@@ -1,3 +1,92 @@
+# 20.0.0 (2025-05-29)
+
+
+### Bug Fixes
+
+* **build:** fix AoT builds ([921be50](https://github.com/pinpins/ng-recaptcha-2/commit/921be508abd085a8ff5e5fa92c3014b4935d0e20)), closes [#57](https://github.com/pinpins/ng-recaptcha-2/issues/57) [#65](https://github.com/pinpins/ng-recaptcha-2/issues/65)
+* **component-v3:** fix a potential metadata error in v3 service ([ed885b5](https://github.com/pinpins/ng-recaptcha-2/commit/ed885b59ece675fd714f999550336d0c259cc2a5))
+* **component:** catch and propagate grecaptcha errors, closes [#175](https://github.com/pinpins/ng-recaptcha-2/issues/175) ([075edd0](https://github.com/pinpins/ng-recaptcha-2/commit/075edd052f4b419602680a1d481059ff4f3dd7c1))
+* **component:** correct type when using strict mode ([a687d13](https://github.com/pinpins/ng-recaptcha-2/commit/a687d13e2874f38738002ffba598f5892cb60959)), closes [#211](https://github.com/pinpins/ng-recaptcha-2/issues/211)
+* **component:** correctly emit `resolved` event ([25d4246](https://github.com/pinpins/ng-recaptcha-2/commit/25d4246ce286447ac6b4fe7818a3b8bdc3f9a72d))
+* **component:** correctly reset captcha during `ngOnDestroy` ([b31d57f](https://github.com/pinpins/ng-recaptcha-2/commit/b31d57f85d3a676eb3d0428f19effb2e3cc74e8a)), closes [#12](https://github.com/pinpins/ng-recaptcha-2/issues/12)
+* **component:** delay invisible recaptcha execution until it's rendered ([99292b7](https://github.com/pinpins/ng-recaptcha-2/commit/99292b77568a7e0a949c8e679f0eabe21d1c6cca)), closes [#127](https://github.com/pinpins/ng-recaptcha-2/issues/127)
+* **component:** emit `resolved(null)` event when recaptcha expires ([491d99a](https://github.com/pinpins/ng-recaptcha-2/commit/491d99ae36139398b23e7d039f404dd62c360def)), closes [#11](https://github.com/pinpins/ng-recaptcha-2/issues/11)
+* **component:** ensure that component is destroyed safely ([1e51d56](https://github.com/pinpins/ng-recaptcha-2/commit/1e51d565bdd11f01f90b7f7962a8822945b523bf)), closes [#46](https://github.com/pinpins/ng-recaptcha-2/issues/46)
+* **component:** fix a potential error during recaptcha rendering ([1c395b5](https://github.com/pinpins/ng-recaptcha-2/commit/1c395b5a356bf64f57ad25c341115e40a3f9af8f))
+* **component:** fix custom languages for reCAPTCHA v3 ([a2b145d](https://github.com/pinpins/ng-recaptcha-2/commit/a2b145ded798954aa5253ee6948a1c66fc4df765)), closes [#174](https://github.com/pinpins/ng-recaptcha-2/issues/174)
+* **component:** fix server-side rendering ([7a5bc6c](https://github.com/pinpins/ng-recaptcha-2/commit/7a5bc6c3570f533d003954b2cebc1c23cedd07f0)), closes [#34](https://github.com/pinpins/ng-recaptcha-2/issues/34)
+* **component:** fix the injection error when using slandalone `RecaptchaV3Module` ([c93b99c](https://github.com/pinpins/ng-recaptcha-2/commit/c93b99c1fdda1284dd9523a45835892968913ba3))
+* **component:** handle id input parameter correctly ([b578fe5](https://github.com/pinpins/ng-recaptcha-2/commit/b578fe5db9d541b5cf11d2a1d6029688ce1d3825))
+* **component:** handle top-level `execute` errors for reCAPTCHA v3 ([c7d02ce](https://github.com/pinpins/ng-recaptcha-2/commit/c7d02ce89da98fde93ffa87e76b9ff63a604b3dd)), closes [#194](https://github.com/pinpins/ng-recaptcha-2/issues/194)
+* **component:** improve reCAPTCHA v2 and v3 interoperability ([79fc85b](https://github.com/pinpins/ng-recaptcha-2/commit/79fc85b41b51c0f816536b5ea97f3926c0087e0a)), closes [#152](https://github.com/pinpins/ng-recaptcha-2/issues/152)
+* **component:** mark `forRoot()` method as deprecated ([dea31e5](https://github.com/pinpins/ng-recaptcha-2/commit/dea31e52c902fb37bdcb743c6ce51e4a6c3e5b07))
+* **component:** Replace `OpaqueToken` with `InjectionToken` ([2b7db9b](https://github.com/pinpins/ng-recaptcha-2/commit/2b7db9b24ce133e6a4a9cefd8e1e8c0178cee69b))
+* **component:** reset form-bound captcha value after component destruction ([9e5c5e7](https://github.com/pinpins/ng-recaptcha-2/commit/9e5c5e7e9e6a2929462d4b5e586aa9eb0bf38ad6)), closes [#201](https://github.com/pinpins/ng-recaptcha-2/issues/201)
+* **component:** reset form-bound captcha value after component destruction ([0e550c4](https://github.com/pinpins/ng-recaptcha-2/commit/0e550c4a3e4c0aac40085da37a35c1928eebd0cf)), closes [#201](https://github.com/pinpins/ng-recaptcha-2/issues/201)
+* **component:** reset the captcha when the component is destroyed ([e1441c8](https://github.com/pinpins/ng-recaptcha-2/commit/e1441c8b73f9d0e99850aba00f4e7bcf74450433)), closes [#10](https://github.com/pinpins/ng-recaptcha-2/issues/10)
+* **component:** set CSP nonce as attribute ([abcb9a6](https://github.com/pinpins/ng-recaptcha-2/commit/abcb9a6e4571f17e8d9fb304c8f47fd082595d9e))
+* **component:** unblock protractor tests after <re-captcha> destruction ([a5f2fe9](https://github.com/pinpins/ng-recaptcha-2/commit/a5f2fe906a35b4d02cc05b668ee50ef673457f16))
+* **component:** use ElementRef to access component's native element ([d3a8409](https://github.com/pinpins/ng-recaptcha-2/commit/d3a8409cc6578258c1f0d6e0e153c5bb77a583e4)), closes [#48](https://github.com/pinpins/ng-recaptcha-2/issues/48) [#68](https://github.com/pinpins/ng-recaptcha-2/issues/68)
+* **demo:** re-add a missing systemjs config file ([b51694a](https://github.com/pinpins/ng-recaptcha-2/commit/b51694af99cd1e260168d48a2f99b137c53d3694))
+* **module:** Adding the value accessor directive to the forms barrel, which was missing. ([ad73e2e](https://github.com/pinpins/ng-recaptcha-2/commit/ad73e2e1be5a7008ec24aa8455cd4e7a4317c842))
+* **package:** convert the `README.md` file back to a proper symlink ([e0c5c99](https://github.com/pinpins/ng-recaptcha-2/commit/e0c5c9903ed6b1927774ff657f5b3ca216a12664))
+* **package:** fix publishing empty package ([e4685fe](https://github.com/pinpins/ng-recaptcha-2/commit/e4685fe0ff83a14b2d56d88455a76e0d11e62d9c))
+* **package:** make `@types/grecaptcha` a non-optional dependency ([bc5ad51](https://github.com/pinpins/ng-recaptcha-2/commit/bc5ad516cda6c39d12f5804330b1be02936f5283)), closes [#205](https://github.com/pinpins/ng-recaptcha-2/issues/205)
+* **rxjs:** change import of `of` operator ([3e0bda6](https://github.com/pinpins/ng-recaptcha-2/commit/3e0bda60684bd731a58f35485dca686a0e227144)), closes [#95](https://github.com/pinpins/ng-recaptcha-2/issues/95)
+
+
+### Features
+
+* **component:** *deprecate* `error` output in favor of `errored` ([6b002bb](https://github.com/pinpins/ng-recaptcha-2/commit/6b002bb7e42fa941ae5096c8417a9672b42bf28c))
+* **component:** add `exportAs` annotation ([3e2e217](https://github.com/pinpins/ng-recaptcha-2/commit/3e2e217e3980bdf567a6328520dbbd5d3cb0d276))
+* **component:** add a new `RECAPTCHA_LOADER_OPTIONS` injection token as a way of manipulating script load parameters (such as base URL, language, trusted types, WAF, etc) ([b3c7213](https://github.com/pinpins/ng-recaptcha-2/commit/b3c721321221a6047ed914d76ad93169f91a9299))
+* **component:** Add Angular 11 support ([918fe90](https://github.com/pinpins/ng-recaptcha-2/commit/918fe909685953082698635e1c64aa9223bc56ba))
+* **component:** add support for `badge` property ([5a16430](https://github.com/pinpins/ng-recaptcha-2/commit/5a16430149534ecaa7ef921c80e0383f4ac787aa)), closes [#30](https://github.com/pinpins/ng-recaptcha-2/issues/30)
+* **component:** add support for invisible reCAPTCHA ([c19489d](https://github.com/pinpins/ng-recaptcha-2/commit/c19489d2668f89c0277a5985920d3db299a78703)), closes [#18](https://github.com/pinpins/ng-recaptcha-2/issues/18)
+* **component:** add support for reCAPTCHA v3 ([4a083c6](https://github.com/pinpins/ng-recaptcha-2/commit/4a083c638e7395b982a1cfc95a8d187107d14e21)), closes [#129](https://github.com/pinpins/ng-recaptcha-2/issues/129)
+* **component:** add the ability to handle reCAPTCHA errors ([80c9e6e](https://github.com/pinpins/ng-recaptcha-2/commit/80c9e6e36c3b8dced1a5e5db591118bcd2bc72f7)), closes [#199](https://github.com/pinpins/ng-recaptcha-2/issues/199)
+* **component:** add the ability to provide `nonce` to the script tag ([8f55b19](https://github.com/pinpins/ng-recaptcha-2/commit/8f55b19b15edfa7da76387a9b4521e8d0f08bc93)), closes [#100](https://github.com/pinpins/ng-recaptcha-2/issues/100)
+* **component:** add the ability to specify component props globally ([d9c5f55](https://github.com/pinpins/ng-recaptcha-2/commit/d9c5f55b6d75314cb2939699fc9b1f76f18f7171)), closes [#45](https://github.com/pinpins/ng-recaptcha-2/issues/45)
+* **component:** adjust dependencies for Angular 6 support ([736c7ae](https://github.com/pinpins/ng-recaptcha-2/commit/736c7ae764b619dbbb559a568b5455d65b779bec))
+* **component:** allow to specify a base url for loading recaptcha ([df505fd](https://github.com/pinpins/ng-recaptcha-2/commit/df505fd0476bb3d268c3d6084e0ded5053fa8e49)), closes [#101](https://github.com/pinpins/ng-recaptcha-2/issues/101)
+* **component:** change component and directive selectors ([58a01b4](https://github.com/pinpins/ng-recaptcha-2/commit/58a01b460671c23c88735911d30fd8a520a00729))
+* **component:** load recaptcha script using code compatible with trusted types ([88d257b](https://github.com/pinpins/ng-recaptcha-2/commit/88d257b08255b59ca5e517871413e0a59a626a3f)), closes [#304](https://github.com/pinpins/ng-recaptcha-2/issues/304)
+* **component:** make Angular 10.0.0 a supported peer dependency ([3d7756b](https://github.com/pinpins/ng-recaptcha-2/commit/3d7756bfdf75dad4a359577142908fd9b7d9a80d)), closes [#177](https://github.com/pinpins/ng-recaptcha-2/issues/177)
+* **component:** make Angular 8.0.0 a supported peer dependency ([f003ff2](https://github.com/pinpins/ng-recaptcha-2/commit/f003ff22f5cdd93730bb6d957c7ad4cbafabfdb3))
+* **component:** make Angular 9.0.0 a supported peer dependency ([98edce6](https://github.com/pinpins/ng-recaptcha-2/commit/98edce685bfb458a048408e4709f2265c5626776)), closes [#168](https://github.com/pinpins/ng-recaptcha-2/issues/168)
+* **component:** remove deprecated `forRoot` method ([514beaf](https://github.com/pinpins/ng-recaptcha-2/commit/514beaf066eceae7d5a976e4259641ac8f24244e))
+* **misc:** Annotating a static field with nocollapse so that we doesn't have issues closure compiler in advanced mode. ([55e5932](https://github.com/pinpins/ng-recaptcha-2/commit/55e593239fb3e9a551887787bd9c34065088fe8e))
+* **module:** change the way recaptcha modules work ([6e13389](https://github.com/pinpins/ng-recaptcha-2/commit/6e13389d0a5909ad529f2231464826f6e6570851))
+* **module:** skip `forRoot()` when importing `RecaptchaModule` ([7fb97fb](https://github.com/pinpins/ng-recaptcha-2/commit/7fb97fb04049dd058a2394ecef297dac7c6104d1)), closes [#113](https://github.com/pinpins/ng-recaptcha-2/issues/113) [#116](https://github.com/pinpins/ng-recaptcha-2/issues/116)
+* **package management:** add `@types/grecaptcha` as optional dependency ([85fbfba](https://github.com/pinpins/ng-recaptcha-2/commit/85fbfbadbaafe4443393383726a303fc246e725f))
+* **package:** add Angular 12 support ([a212a21](https://github.com/pinpins/ng-recaptcha-2/commit/a212a218d7c9c019855ef6566c2d105f0d9952ea))
+* **package:** add Angular 14 support ([eac6858](https://github.com/pinpins/ng-recaptcha-2/commit/eac685866af880d75974ead66cefd11dc45949cf))
+* **package:** add Angular 15 support ([6c62634](https://github.com/pinpins/ng-recaptcha-2/commit/6c626347630f775a9c16bf08c942c3f43935e206)), closes [#275](https://github.com/pinpins/ng-recaptcha-2/issues/275)
+* **package:** add Angular 16 support ([77a7d1f](https://github.com/pinpins/ng-recaptcha-2/commit/77a7d1fa37993fad98f2f07dc0b6dc54bf8a96b0)), closes [#288](https://github.com/pinpins/ng-recaptcha-2/issues/288)
+* **package:** add Angular 17 support ([83714aa](https://github.com/pinpins/ng-recaptcha-2/commit/83714aab5f751de29aa408bf82c614c5a1d0918c)), closes [#310](https://github.com/pinpins/ng-recaptcha-2/issues/310)
+* **package:** implement Angular Package format ([71340c4](https://github.com/pinpins/ng-recaptcha-2/commit/71340c49ed52ce6cfeb4b46eb85c0987f3770410))
+* **package:** update `"@types/grecaptcha"` optional dependency version to ^3 ([e1ee7b9](https://github.com/pinpins/ng-recaptcha-2/commit/e1ee7b96748f07a2c6093b49d6013470b70a87cd))
+* **package:** update peer dependencies to include Angular 7 ([929ef7a](https://github.com/pinpins/ng-recaptcha-2/commit/929ef7a0a46a64be3b402b02f4506b4bafdddbcc))
+* **package:** update peer dependencies to include Angular v4 ([b2f04e8](https://github.com/pinpins/ng-recaptcha-2/commit/b2f04e8847ff3c3f68d4566f4fbd7ff7906842a7))
+* **package:** upgrade to Angular 13 ([af08641](https://github.com/pinpins/ng-recaptcha-2/commit/af08641e7097f8ec0dec5f489227bea22082ba89)), closes [#245](https://github.com/pinpins/ng-recaptcha-2/issues/245)
+
+
+### BREAKING CHANGES
+
+* **package:** - Angular v16 is no longer supported with this version. Pin `ng-recaptcha` to `v12.x.x` to retain support for a previous Angular version
+* **package:** - Angular v15 is no longer supported with this version. Pin `ng-recaptcha` to `v11.x.x` to retain support for a previous Angular version
+* **component:** Support for previous versions of Angular has been dropped. Starting from v7 only one version of Angular will be supported.
+* **component:** The `RecaptchaModule.forRoot()` method has been obsolete since v4.1.0 (since it has no longer been required). It is now removed. To migrate your code, simply use `RecaptchaModule` where you previously used `RecaptchaModule.forRoot()`
+* **package:** * `ng-recaptcha/forms` entry point has been removed. `RecaptchaFormsModule` and `RecaptchaValueAccessorDirective` should now be imported directly from `ng-recaptcha`
+* `tslib` is now a package dependency to ensure minimum possible bundle size. If your project doesn't yet have a dependency on `tslib`, run `npm install -D tslib@^1.9.0` (or `yarn add -D tslib@^1.9.0` if you use yarn)
+* **component:** The peer dependency for `@angular/core` has been bumped to `^6.0.0`
+* **component:** Angular v2.x.x is no longer supported due to dependency on Platform capabilities that were added in [v4.0.0-rc.1](https://github.com/angular/angular/blob/master/CHANGELOG.md#features-20)
+* **component:** component selector changed from `recaptcha` to `re-captcha`
+* **module:** module handling has changed.
+Users of `RecaptchaNoFormsModule` should instead use `import { RecaptchaModule } from 'ng-recaptcha'`. Users of v1 `RecaptchaModule` should also `import { RecaptchaFormsModule } from 'ng-recaptcha/forms'`. SystemJS users must also re-setup module "main" file to `index.js`
+
+
+
 <a name="14.0.0"></a>
 
 # 14.0.0 (2024-05-25)
